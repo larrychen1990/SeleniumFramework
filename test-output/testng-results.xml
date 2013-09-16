@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="6703" started-at="2013-08-09T07:24:02Z" finished-at="2013-08-09T07:24:09Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="6703" started-at="2013-08-09T07:24:02Z" finished-at="2013-08-09T07:24:09Z">
+      <class name="com.BISPL.module1.LoginLogout">
+        <test-method status="PASS" signature="launchApplication()[pri:0, instance:com.BISPL.module1.LoginLogout@1052a99]" name="launchApplication" is-config="true" duration-ms="3625" started-at="2013-08-09T12:54:02Z" finished-at="2013-08-09T12:54:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method status="PASS" signature="testTest1()[pri:0, instance:com.BISPL.module1.LoginLogout@1052a99]" name="testTest1" duration-ms="3062" started-at="2013-08-09T12:54:06Z" finished-at="2013-08-09T12:54:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTest1 -->
+      </class> <!-- com.BISPL.module1.LoginLogout -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

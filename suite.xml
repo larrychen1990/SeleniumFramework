@@ -1,0 +1,6 @@
+<suite name="mainSuite">
+	<suite-files>
+		<suite-file path="module1.xml"></suite-file>
+		<suite-file path="module2.xml"></suite-file>
+	</suite-files>
+</suite>

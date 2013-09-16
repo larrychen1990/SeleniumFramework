@@ -1,0 +1,28 @@
+<project name="hybridframework" basedir="." default="runTests">		
+	<property name="build.dir" value="${basedir}/build"/>
+    <property name="jars.dir" value="${basedir}/jars"/>
+    <property name="src.dir" value="${basedir}/src"/>
+	<property name="bin.dir" value="${basedir}/bin" />   
+	<target name="setClassPath">
+        <path id="classpath_jars">
+            <pathelement path="${basedir}/" />
+            <fileset dir="${jars.dir}" includes="*.jar" />
+        </path>
+		<pathconvert pathsep=":" property="test.classpath" refid="classpath_jars" />
+    </target>
+	<target name="clean" depends="setClassPath">
+        <echo message="deleting existing build directory"/>
+        <delete dir="${build.dir}"/>
+		<mkdir dir="${build.dir}"/>
+    </target>
+	<target name="compile" depends="clean">
+        <echo message="compiling.........."/>
+        <javac destdir="${build.dir}" srcdir="${src.dir}" classpath="${test.classpath}"/>
+	</target>
+	<target name="runTests" depends="compile">
+    	<taskdef resource="testngtasks" classpath="${test.classpath}"/>        
+        <testng classpath="${test.classpath}:${build.dir}">
+            <xmlfileset dir="${basedir}" includes="module1.xml,module2.xml"/>
+        </testng>
+    </target>	
+</project>

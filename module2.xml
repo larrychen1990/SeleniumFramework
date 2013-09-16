@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Module2 suite">
+  <test verbose="2" name="Module2 test">
+    <classes>
+      <class name="com.BISPL.module2.CreateCustomer"/>
+      <class name="com.BISPL.module2.Test4"/>
+    </classes>
+  </test> <!-- Module1 test -->  
+</suite> <!-- Module1 suite -->
