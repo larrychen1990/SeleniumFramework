@@ -1,21 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="3" failed="0" total="4" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6703" started-at="2013-08-09T07:24:02Z" finished-at="2013-08-09T07:24:09Z">
+  <suite name="Module2 suite" duration-ms="36" started-at="2014-08-05T11:58:17Z" finished-at="2014-08-05T11:58:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6703" started-at="2013-08-09T07:24:02Z" finished-at="2013-08-09T07:24:09Z">
+    <test name="Module2 test" duration-ms="36" started-at="2014-08-05T11:58:17Z" finished-at="2014-08-05T11:58:17Z">
+      <class name="com.BISPL.module2.Test4">
+        <test-method status="PASS" signature="testTest4()" name="testTest4" duration-ms="1" started-at="2014-08-05T11:58:17Z" finished-at="2014-08-05T11:58:17Z">
+        </test-method>
+      </class>
+      <class name="com.BISPL.module2.CreateCustomer">
+        <test-method status="FAIL" signature="launchApplication()" name="launchApplication" is-config="true" duration-ms="0" started-at="2014-08-05T11:58:17Z" finished-at="2014-08-05T11:58:17Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.BISPL.config.Config.launchApplication(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:525)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:202)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:613)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="SKIP" signature="testTest3()" name="testTest3" duration-ms="0" started-at="2014-08-05T11:58:17Z" finished-at="2014-08-05T11:58:17Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+  <suite name="Module1 suite" duration-ms="79" started-at="2014-08-05T11:58:17Z" finished-at="2014-08-05T11:58:17Z">
+    <groups>
+    </groups>
+    <test name="Module1 test" duration-ms="79" started-at="2014-08-05T11:58:17Z" finished-at="2014-08-05T11:58:17Z">
+      <class name="com.BISPL.module1.LoginLogoutExtra">
+        <test-method status="SKIP" signature="testTest2()" name="testTest2" duration-ms="0" started-at="2014-08-05T11:58:17Z" finished-at="2014-08-05T11:58:17Z">
+        </test-method>
+        <test-method status="SKIP" signature="launchApplication()" name="launchApplication" is-config="true" duration-ms="0" started-at="2014-08-05T11:58:17Z" finished-at="2014-08-05T11:58:17Z">
+        </test-method>
+      </class>
       <class name="com.BISPL.module1.LoginLogout">
-        <test-method status="PASS" signature="launchApplication()[pri:0, instance:com.BISPL.module1.LoginLogout@1052a99]" name="launchApplication" is-config="true" duration-ms="3625" started-at="2013-08-09T12:54:02Z" finished-at="2013-08-09T12:54:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method status="PASS" signature="testTest1()[pri:0, instance:com.BISPL.module1.LoginLogout@1052a99]" name="testTest1" duration-ms="3062" started-at="2013-08-09T12:54:06Z" finished-at="2013-08-09T12:54:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTest1 -->
-      </class> <!-- com.BISPL.module1.LoginLogout -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method status="FAIL" signature="launchApplication()" name="launchApplication" is-config="true" duration-ms="0" started-at="2014-08-05T11:58:17Z" finished-at="2014-08-05T11:58:17Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.BISPL.config.Config.launchApplication(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:525)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:202)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:613)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="SKIP" signature="testTest1()" name="testTest1" duration-ms="0" started-at="2014-08-05T11:58:17Z" finished-at="2014-08-05T11:58:17Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
 </testng-results>

@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Module2 suite]">
-  <test name="Module2 test(failed)">
+  <test name="Module2 test(failed)" preserve-order="false">
     <classes>
-      <class name="com.qspiders.module2.CreateCustomer">
+      <class name="com.BISPL.module2.CreateCustomer">
         <methods>
-          <include name="launchApplication"/>
-          <include name="quiteApplication"/>
           <include name="testTest3"/>
+          <include name="launchApplication"/>
         </methods>
-      </class> <!-- com.qspiders.module2.CreateCustomer -->
+      </class>
     </classes>
-  </test> <!-- Module2 test(failed) -->
-</suite> <!-- Failed suite [Module2 suite] -->
+  </test>
+</suite>
